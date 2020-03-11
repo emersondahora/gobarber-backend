@@ -27,9 +27,9 @@ routes.post('/files', upload.single('file'), FileController.store);
 routes.get('/providers', ProviderController.index);
 routes.get('/providers/:providerId/available', AvailableController.index);
 
-routes.post('/appoitments', AppointmentController.store);
-routes.get('/appoitments', AppointmentController.index);
-routes.delete('/appoitments/:id', AppointmentController.delete);
+routes.post('/appointments', AppointmentController.store);
+routes.get('/appointments', AppointmentController.index);
+routes.delete('/appointments/:id', AppointmentController.delete);
 
 routes.get('/schedule', ScheduleController.index);
 
